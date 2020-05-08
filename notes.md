@@ -38,6 +38,7 @@
 ### Django jargons:
 1. Architecture:
 Django has a MTV(Models - Templates - Views) architecture, which is like(Not really) the MVC(Models - Views - Controllers) architecture where, [Models = Models, Templates = Views, Views = Controllers]
+<br>
                +------------------+    +-------------+
                |  (Server-Side)   |    |(client-side)|
 [Database] <-> |[Model] <-> [View]| <->| [Template]  |
