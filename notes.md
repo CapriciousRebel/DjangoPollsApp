@@ -40,10 +40,16 @@
 Django has a MTV(Models - Templates - Views) architecture, which is like(Not really) the MVC(Models - Views - Controllers) architecture where, [Models = Models, Templates = Views, Views = Controllers]
 <br>
 <pre>
-+---------------------------------------+     +-------------+ 
-|          (Server-Side)                |     |(client-side)| 
-|                                       |     |             |
-|[Database] <-> [Model]| <-> [View/App] | <-> | [Template]  | 
-|                                       |     |             |
-+---------------------------------------+     +-------------+
+                    (Server-Side)                                             (client-side)
++---------------------------------------------------+                        +-----------+ 
+|                              +----+    +-------+  |                       |           | 
+|                              |    | <--|urls.py| <---[HTTP Request]-----  |           |
+| +--------+     +-----+       |    |    +-------+  |                       |  Browser  |
+| |Database| <-> |Model|  <->  |    | -----------------[HTTP Response]--->  |           | 
+| +--------+     +-----+       |View|               |                       |           |
+|                              |    |               |                       |           |
+|              +---------+     |    |               |                       |           |
+|              |Templates| <-> |    |               |                       |           |
+|              +---------+     +----+               |                       |           |
++---------------------------------------------------+                       +-----------+
 </pre>
