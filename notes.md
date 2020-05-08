@@ -39,8 +39,8 @@
 1. Architecture:
 Django has a MTV(Models - Templates - Views) architecture, which is like(Not really) the MVC(Models - Views - Controllers) architecture where, [Models = Models, Templates = Views, Views = Controllers]
 <br>
-               +------------------+    +-------------+
-               |  (Server-Side)   |    |(client-side)|
-[Database] <-> |[Model] <-> [View]| <->| [Template]  |
-               |[Model] <-> [App] |    +=============+
+               +------------------+    +-------------+ <br>
+               |  (Server-Side)   |    |(client-side)| <br>
+[Database] <-> |[Model] <-> [View]| <->| [Template]  | <br>
+               |[Model] <-> [App] |    +=============+ <br>
                +==================+
