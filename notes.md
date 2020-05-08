@@ -41,7 +41,7 @@ Django has a MTV(Models - Templates - Views) architecture, which is like(Not rea
 <br>
 <pre>
 +----------------------------------+    +-------------+ 
-|       (Server-Side)              |    |(client-side)| 
+|          (Server-Side)           |    |(client-side)| 
 |                                  |    |             |
 |[Database] <-> |[Model] <-> [View]| <->| [Template]  | 
 |               |[Model] <-> [App] |    |             |     
