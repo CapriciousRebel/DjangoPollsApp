@@ -31,12 +31,16 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.admin',         # The admin site.
+    'django.contrib.auth',          # An authentication system.
+    'django.contrib.contenttypes',  # A framework for content types.
+    'django.contrib.sessions',      # A session framework.
+    'django.contrib.messages',      # A messaging framework.
+    'django.contrib.staticfiles',   # A framework for managing static files
+
+    # Plug in new apps
+    'polls.apps.PollsConfig',
+    'Shop.apps.ShopConfig',
 ]
 
 MIDDLEWARE = [
@@ -76,9 +80,8 @@ WSGI_APPLICATION = 'RebelCommerce.wsgi.application'
 DATABASES = {
 
     'default': {
-
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'polls',
+        'NAME': 'shopping',
         'USER': 'postgres',
         'PASSWORD': 'Hl0olqwv',
         'HOST': 'localhost',
@@ -110,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
